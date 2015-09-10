@@ -7,35 +7,30 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
-			<key>UTTypeTagSpecification</key>
-			<array>
-				<string>pdf</string>
-			</array>
 			<key>CFBundleTypeIconFiles</key>
 			<array>
-				<string>iTunesArtwork</string>
+				<string>icon-1024</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>PDF Document</string>
+			<string>PDF</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSHandlerRank</key>
-			<string>Alternate</string>
+			<string>Default</string>
 			<key>LSItemContentTpyes</key>
 			<array>
-				<string>JSIMDemo</string>
 				<string>com.adobe.pdf</string>
 			</array>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>PDF</string>
+				<string>com.adobe.pdf</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>jason.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>jason.ImportExportDemo</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -63,6 +58,10 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSItemContentTypes</key>
+	<array>
+		<string>jason.ImportExportDemo.pdf</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -83,32 +82,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UTExportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeDescription</key>
-			<string>JSExportedDemo</string>
-			<key>UTTypeIdentifier</key>
-			<string>JSExportedDemo</string>
-			<key>UTTypeSize320IconFile</key>
-			<string>icon-1024</string>
-			<key>UTTypeSize64IconFile</key>
-			<string>Icon-iPhone-57</string>
-		</dict>
-	</array>
-	<key>UTImportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeDescription</key>
-			<string>JSImportedDemo</string>
-			<key>UTTypeIdentifier</key>
-			<string>JSImportedDemo</string>
-			<key>UTTypeSize320IconFile</key>
-			<string>icon-1024</string>
-			<key>UTTypeSize64IconFile</key>
-			<string>Icon-iPhone-57</string>
-		</dict>
 	</array>
 </dict>
 </plist>

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#define PreviewDocumentNotifierName @"PreviewDocumentNotifier" //预览文档的通知
 
+@interface ViewController : UIViewController
 
 @end
 

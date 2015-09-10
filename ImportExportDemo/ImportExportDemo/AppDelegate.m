@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -40,6 +42,24 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    
+//    NSLog(@"openURL method was called");
+//    
+//    NSLog(@"the source application is: %@", sourceApplication);
+//    
+//    
+//    NSLog(@"url is: %@", url);
+//    
+//    NSLog(@"handle the file in above file path for the shared doc");
+    
+    //通知用于打开文档
+    [[NSNotificationCenter defaultCenter] postNotificationName:PreviewDocumentNotifierName object:url];
+    
+    return YES;
 }
 
 @end
